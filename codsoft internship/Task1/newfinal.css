@@ -1,0 +1,159 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    transition: background-color 0.3s;
+}
+
+header.scrolled {
+    background-color: rgba(51, 51, 51, 0.9);
+}
+
+header .logo {
+    float: left;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+header nav {
+    float: right;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-left: 1rem;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('webpic.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 5rem 0;
+    animation: fadeIn 2s;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 1.25rem;
+}
+
+.cta-button {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.75rem 1.5rem;
+    background-color: #ff6347;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #ff4500;
+}
+
+.features, .testimonials, .contact {
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.features h2, .testimonials h2, .contact h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.feature-grid, .testimonial-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.feature-item, .testimonial-item {
+    flex: 1 1 30%;
+    margin: 1rem;
+    padding: 1rem;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.feature-item .icon {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form label {
+    margin-top: 1rem;
+}
+
+form input, form textarea {
+    width: 100%;
+    max-width: 500px;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    margin-top: 1rem;
+    padding: 0.75rem 1.5rem;
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #ff4500

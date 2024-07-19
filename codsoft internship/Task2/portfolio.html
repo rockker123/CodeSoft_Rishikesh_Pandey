@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saad's Portfolio</title>
+    <link rel="stylesheet" href="Style.css">
+    <script src="script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="intro">
+            <h1>Hi all, I'm Saad <span>👋</span></h1>
+            <p>A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks</p>
+            <div class="social-icons">
+                <a href="#"><img src="github.png" alt="GitHub"></a>
+                <a href="#"><img src="linkdin.png" alt="LinkedIn"></a>
+                <a href="#"><img src="google.png" alt="Google"></a>
+                <a href="#"><img src="gitlab.png" alt="GitLab"></a>
+                <a href="#"><img src="facebook.png" alt="Facebook"></a>
+            </div>
+            <div class="buttons">
+                <a href="#" class="btn">Contact Me</a>
+                <a href="#" class="btn">See My Resume</a>
+            </div>
+        </section>
+        <section id="skills" class="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>JavaScript</li>
+                <li>ReactJS</li>
+                <li>NodeJS</li>
+                <li>React Native</li>
+                <li>HTML & CSS</li>
+            </ul>
+        </section>
+        <section id="projects" class="projects">
+            <h2>Projects</h2>
+            <div class="project-card">
+                <h3>Project One</h3>
+                <p>Oral Cancer Detection.</p>
+            </div>
+            <div class="project-card">
+                <h3>Project Two</h3>
+                <p>Plant Watering System.</p>
+            </div>
+            <div class="project-card">
+                <h3>Project Three</h3>
+                <p>Ecommers Website.</p>
+            </div>
+        </section>
+        <section id="contact" class="contact">
+            <h2>Contact Me</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Saad's Portfolio. All rights reserved.</p>
+    </footer>
+</body>
+</html>
